@@ -56,6 +56,10 @@
 
 #if defined(__VMKLNX__)
 
+#ifndef RX_SKB_COPY
+#define RX_SKB_COPY
+#endif
+
 #define NETIF_F_RXCSUM        (1 << 29)
 
 #define skb_clone(skb, gfp_mask)        skb_get(skb)
@@ -802,9 +806,9 @@ static int ax88179_set_tx_csum(struct net_device *netdev, u32 val)
     return ax88179_set_csums(dev);
 }
 
-static int ax88179_set_tso(struct net_device *netdev, u32 val)
+static int ax88179_set_tso(struct net_device *netdev, u32 data)
 {
-    if (val)
+    if (data)
         netdev->features |= NETIF_F_TSO;
     else
         netdev->features &= ~NETIF_F_TSO;
