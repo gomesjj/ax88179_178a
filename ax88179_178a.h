@@ -1,7 +1,7 @@
 #ifndef    __LINUX_USBNET_ASIX_H
 #define    __LINUX_USBNET_ASIX_H
 
-#define RX_SKB_COPY
+//#define RX_SKB_COPY
 
 #define AX88179_PHY_ID            0x03
 #define AX_MCAST_FILTER_SIZE        8
