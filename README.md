@@ -1,6 +1,11 @@
 # USB NIC Driver for ESXi 5.1/5.5/6.0 (ASIX)
 
-[TOC]
+####Table of Contents  
+
+* [Tested Devices](#Tested-Devices)
+* [Software](#Software)
+* [Required Software](#Required-Software)
+* [Additional Resources](#Additional-Resources)
 
 ### Tested Devices
 
