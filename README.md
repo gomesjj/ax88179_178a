@@ -7,7 +7,6 @@ The modifications I made to the source code are very similar to William's, but t
 ###Table of Contents  
 
 * [Tested Devices](#tested-devices)
-* [Software](#software)
 * [Required Software](#required-software)
 * [Setup](#setup)
 	* [Prepare the build environment](#prepare-the-build-environment) 
