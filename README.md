@@ -6,12 +6,12 @@ The modifications I made to the source code are very similar to William's, but t
 
 ###Table of Contents  
 
-* [Tested Devices](#Tested-Devices)
-* [Software](#Software)
-* [Required Software](#Required-Software)
-* [Setup](#Setup)
-	* [Prepare the build environment](#Prepare-the-build-environment) 
-	*  [Building the driver](#Building-the-driver)
+* [Tested Devices](#tested-devices)
+* [Software](#software)
+* [Required Software](#required-software)
+* [Setup](#setup)
+	* [Prepare the build environment](#prepare-the-build-environment) 
+	*  [Building the driver](#building-the-driver)
 
 ### Tested Devices
 
