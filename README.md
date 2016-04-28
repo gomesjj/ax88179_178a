@@ -40,7 +40,7 @@ To make life easier, I customised the Kickstart file provided with the ESXi 5.5 
 
 The initial build directory structure should be:
 
-```shell
+```sh
 		mkdir -p /build/{vsphere,toolchain}
 ```
 
