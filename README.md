@@ -7,13 +7,11 @@ Key features:
 * Supports ASIX AX88179 and AX88178a
 * TCP, UDP and IPv4 checksum offload (RX and TX)
 * TCP, UDP and IPv6 checksum offload (RX and TX)
-* Scatter-Gather support (\*)
-* TCP Segmentation Offload support (\*)
+* Scatter-Gather support
+* TCP Segmentation Offload support
 * Wake on LAN support
 * VLAN support
 * Jumbo Frames (4k)
-
-\* Features are not fully supported by usbnet (not even on Linux)
 
 ###Table of Contents  
 
