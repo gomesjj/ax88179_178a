@@ -2,7 +2,7 @@
 
 I came across a great post by William Lam [<u>Working USB Ethernet Adapter (NIC) for ESXi</u>](http://www.virtuallyghetto.com/2016/03/working-usb-ethernet-adapter-nic-for-esxi.html). Like William, I was also looking at additional network adapters to use with my Intel NUC. As I had some spare time, I decide to embark on a parallel effort to port the driver to ESXi 5.5 and 6.0.
 
-The modifications I made to the source code are very similar to William's, but there are a few differences: the resulting module after compiling this source code works with the adapter plugged in to either a USB 3.0 or USB 2.0 port. Also, I have enabled both scatter-gather and TSO, which dramatically improve throughput (not on when attached to a USB 2.0 port, obviously)
+The modifications I made to the source code are very similar to William's, but there are a few differences: the resulting module after compiling this source code works with the adapter plugged in to either a USB 3.0 or USB 2.0 port. Also, I have enabled both scatter-gather and TSO, which dramatically improves throughput (not when attached to a USB 2.0 port, obviously)
 
 ###Table of Contents  
 
