@@ -107,7 +107,7 @@ Unlike ESXi 5.1, the ODP source code and the build toolchain for 5.5 and 6.0 are
 First, copy the **vmkdrivers-gpl** folder from the ODP ISO (either VMware-ESX-5.5.0u03-ODP.iso or VMware-ESXI-60U2-ODP.iso) to /build/vsphere/
 
 ```sh
-cp -r /cdrom/vmkdirvers-gpl /build/vsphere
+cp -r /cdrom/vmkdrivers-gpl /build/vsphere
 umount /cdrom
 ```
 
