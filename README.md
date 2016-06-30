@@ -117,8 +117,8 @@ The toolchain ISO (VMware-550u3-TOOLCHAIN-ODP_21_July_2015.iso or VMware-TOOLCHA
 
 ```sh
 cd /build/toolchain
-tar xvf /cdrom/tc-src.tar src/gcc-4.4.3-2 src/glibc-2.3.2-95.44 src/binutils-2.20.1-1
-umount src/common/functions /cdrom
+tar xvf /cdrom/tc-src.tar src/gcc-4.4.3-2 src/glibc-2.3.2-95.44 src/binutils-2.20.1-1 src/common/functions 
+umount /cdrom
 ```
 
 **Note:** The above assumes that */cdrom* is the mount point for the ISO/Physical DVD — your environment might differ.
