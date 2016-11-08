@@ -69,7 +69,7 @@ Extract the contents of the compressed tar archive to /build/vsphere:
 
 ~~~sh
 cd /build/vsphere
-tar zxvf /path/to/VMware-esx-open-source-5.0.0u2.oss.tgz
+tar xvf /path/to/VMware-esx-open-source-5.1.0u2.oss.tar --strip-components=1 server/vmkdrivers-gpl
 cd vmkdrivers-gpl
 ~~~
 You are now ready to compile the build toolchain:
@@ -78,7 +78,7 @@ _glibc_
 
 ~~~sh
 cd glibc-2.3.2-95.44
-. BUILD.txt
+bash ./BUILD.txt
 cd ..
 ~~~
 
@@ -86,7 +86,7 @@ _binutils_
 
 ~~~sh
 cd binutils-2.17.50.0.15-modcall
-. BUILD.txt
+bash ./BUILD.txt
 cd ..
 ~~~
 
@@ -94,7 +94,7 @@ _gcc_
 
 ~~~sh	
 cd gcc-4.1.2-9
-. BUILD.txt
+bash ./BUILD.txt
 cd ..		
 ~~~
 
@@ -186,10 +186,10 @@ Create the directory that will hold the driver's namespace dependencies map:
 
 ```sh
 cd /build/vsphere/vmkdrivers-gpl
-mkdir BLD/build/HEADERS/CUR-9-vmkdrivers-namespace/vmkernel64/release/ax88179
-echo -e "VMK_NAMESPACE_REQUIRED("com.vmware.usb", "9.2.1.0");\
-\nVMK_NAMESPACE_REQUIRED("com.vmware.usbnet", "9.2.1.0");"\
-> BLD/build/HEADERS/92-vmkdrivers-namespace/vmkernel64/release/ax88179/__namespace.h
+mkdir BLD/build/HEADERS/CUR-92-vmkdrivers-namespace/vmkernel64/release/ax88179
+echo -e "VMK_NAMESPACE_REQUIRED(\"com.vmware.usb\", \"9.2.1.0\");\
+\nVMK_NAMESPACE_REQUIRED(\"com.vmware.usbnet\", \"9.2.1.0\");"\
+> BLD/build/HEADERS/CUR-92-vmkdrivers-namespace/vmkernel64/release/ax88179/__namespace.h
 ```
 
 <u>*ESXi 5.5*</u>
@@ -197,8 +197,8 @@ echo -e "VMK_NAMESPACE_REQUIRED("com.vmware.usb", "9.2.1.0");\
 ```sh
 cd /build/vsphere/vmkdrivers-gpl
 mkdir BLD/build/HEADERS/CUR-92-vmkdrivers-namespace/vmkernel64/release/ax88179
-echo -e "VMK_NAMESPACE_REQUIRED("com.vmware.usb", "9.2.2.0");\
-\nVMK_NAMESPACE_REQUIRED("com.vmware.usbnet", "9.2.2.0");"\
+echo -e "VMK_NAMESPACE_REQUIRED(\"com.vmware.usb\", \"9.2.2.0\");\
+\nVMK_NAMESPACE_REQUIRED(\"com.vmware.usbnet\", \"9.2.2.0\");"\
 > BLD/build/HEADERS/CUR-92-vmkdrivers-namespace/vmkernel64/release/ax88179/__namespace.h
 ```
 
@@ -207,8 +207,8 @@ echo -e "VMK_NAMESPACE_REQUIRED("com.vmware.usb", "9.2.2.0");\
 ```sh
 cd /build/vsphere/vmkdrivers-gpl
 mkdir BLD/build/HEADERS/92-vmkdrivers-namespace/vmkernel64/release/ax88179
-echo -e "VMK_NAMESPACE_REQUIRED("com.vmware.usb", "9.2.3.0");\
-\nVMK_NAMESPACE_REQUIRED("com.vmware.usbnet", "9.2.3.0");"\
+echo -e "VMK_NAMESPACE_REQUIRED(\"com.vmware.usb\", \"9.2.3.0\");\
+\nVMK_NAMESPACE_REQUIRED(\"com.vmware.usbnet\", \"9.2.3.0\");"\
 > BLD/build/HEADERS/92-vmkdrivers-namespace/vmkernel64/release/ax88179/__namespace.h
 ```
 
