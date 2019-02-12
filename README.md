@@ -1,4 +1,4 @@
-# USB NIC Driver for ESXi 5.1/5.5/6.0/6.5/67 (ASIX)  
+# USB NIC Driver for ESXi 5.1/5.5/6.0/6.5/6.7 (ASIX)  
 
 AISX ax88179_178a driver for ESXi   
 
